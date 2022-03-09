@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobx_mp3/view/features/image_slider.dart';
 import 'package:mobx_mp3/view/features/progress_bar.dart';
 import 'package:mobx_mp3/view/features/progress_bottom.dart';
 import 'package:mobx_mp3/view/features/progress_top.dart';
@@ -17,7 +18,8 @@ class HomePage extends StatelessWidget {
             alignment: Alignment.center,
             child: Column(
               mainAxisSize: MainAxisSize.min,
-              children: const [
+              children: [
+                ImageSlider(),
                 ProgressTop(),
                 CustomProgressBar(),
                 ProgressBottom(),
