@@ -9,10 +9,7 @@ class TitleText extends StatelessWidget {
       padding: EdgeInsets.all(8.0),
       child: Text(
         'Sailor Moon List',
-        style: TextStyle(
-          fontWeight: FontWeight.bold,
-          fontSize: 20,
-        ),
+        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
       ),
     );
   }

@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Mp3 player',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
       ),
       home: const HomePage(),
     );

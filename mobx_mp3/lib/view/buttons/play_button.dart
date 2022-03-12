@@ -14,7 +14,6 @@ class PlayButton extends StatelessWidget {
         padding: EdgeInsets.all(20.0),
         child: Icon(
           Icons.play_arrow,
-          //Icons.pause,
           size: 40,
           color: Colors.white,
         ),

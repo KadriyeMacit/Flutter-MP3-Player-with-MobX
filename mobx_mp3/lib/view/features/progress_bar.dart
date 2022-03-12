@@ -6,17 +6,9 @@ class CustomProgressBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ProgressBar(
-      progress: const Duration(milliseconds: 1000),
-      buffered: const Duration(milliseconds: 2000),
-      total: const Duration(milliseconds: 5000),
-      thumbColor: Colors.orange,
-      progressBarColor: Colors.orangeAccent,
-      baseBarColor: Colors.orangeAccent.shade100,
-      bufferedBarColor: Colors.orangeAccent,
-      onSeek: (duration) {
-        //  print('$duration');
-      },
+    return const ProgressBar(
+      progress: Duration(milliseconds: 1000),
+      total: Duration(milliseconds: 5000),
     );
   }
 }

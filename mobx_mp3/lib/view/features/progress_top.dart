@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobx_mp3/view/buttons/fav_button.dart';
 import 'package:mobx_mp3/view/widgets/singer_title.dart';
 import 'package:mobx_mp3/view/widgets/song_title.dart';
 
@@ -8,7 +9,7 @@ class ProgressTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.symmetric(vertical: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -19,7 +20,7 @@ class ProgressTop extends StatelessWidget {
               SingerTitle(),
             ],
           ),
-          const Icon(Icons.favorite_border)
+          const FavButton(),
         ],
       ),
     );

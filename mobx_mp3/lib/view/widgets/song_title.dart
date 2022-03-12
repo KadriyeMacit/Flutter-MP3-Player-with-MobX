@@ -7,10 +7,7 @@ class SongTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Text(
       'Hello World',
-      style: TextStyle(
-        fontWeight: FontWeight.bold,
-        fontSize: 16,
-      ),
+      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
     );
   }
 }
