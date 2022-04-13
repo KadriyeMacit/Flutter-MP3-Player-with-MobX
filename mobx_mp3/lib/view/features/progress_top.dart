@@ -20,7 +20,7 @@ class ProgressTop extends StatelessWidget {
               SingerTitle(),
             ],
           ),
-          const FavButton(),
+          FavButton(),
         ],
       ),
     );
