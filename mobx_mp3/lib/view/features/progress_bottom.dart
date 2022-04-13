@@ -10,16 +10,16 @@ class ProgressBottom extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: const [
-        BeforeButton(),
-        SizedBox(
+      children: [
+        const BeforeButton(),
+        const SizedBox(
           width: 10,
         ),
         PlayButton(),
-        SizedBox(
+        const SizedBox(
           width: 10,
         ),
-        NextButton(),
+        const NextButton(),
       ],
     );
   }
