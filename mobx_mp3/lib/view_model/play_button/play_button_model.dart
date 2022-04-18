@@ -4,11 +4,11 @@ part 'play_button_model.g.dart';
 class PlayButtonModel = _PlayButtonModelBase with _$PlayButtonModel;
 
 abstract class _PlayButtonModelBase with Store {
-  @computed
-  bool get isPlayTrue => isPlay;
-
   @observable
   bool isPlay = true;
+
+  @computed
+  bool get isPlayTrue => isPlay;
 
   @action
   void onPlayPressed() {

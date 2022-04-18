@@ -5,29 +5,29 @@ import 'package:mobx_mp3/view_model/play_button/play_button_model.dart';
 class PlayButton extends StatelessWidget {
   PlayButton({Key? key}) : super(key: key);
 
-  final _viewModel = PlayButtonModel();
+  final PlayButtonModel _viewModel = PlayButtonModel();
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () => _viewModel.onPlayPressed(),
-      child: Container(
-        decoration: const BoxDecoration(
-          color: Colors.orange,
-          shape: BoxShape.circle,
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Observer(
-            builder: (_) {
-              return Icon(
+      child: Observer(
+        builder: (_) {
+          return Container(
+            decoration: const BoxDecoration(
+              color: Colors.orange,
+              shape: BoxShape.circle,
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Icon(
                 _viewModel.isPlayTrue ? Icons.play_arrow : Icons.pause,
                 size: 40,
                 color: Colors.white,
-              );
-            },
-          ),
-        ),
+              ),
+            ),
+          );
+        },
       ),
     );
   }

@@ -5,7 +5,7 @@ import 'package:mobx_mp3/view_model/fav_button/fav_button_model.dart';
 class FavButton extends StatelessWidget {
   FavButton({Key? key}) : super(key: key);
 
-  final _viewModel = FavButtonModel();
+  final FavButtonModel _viewModel = FavButtonModel();
 
   @override
   Widget build(BuildContext context) {
