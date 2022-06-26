@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
                     const TitleText(),
                     ImageSlider(),
                     const ProgressTop(),
-                    const CustomProgressBar(),
+                    CustomProgressBar(),
                     const ProgressBottom(),
                   ],
                 ),
